@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DoxSummarizer</title>
+    <link rel="stylesheet" href="public/src/output.css">
+    <script src="https://kit.fontawesome.com/7143a6026e.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      roboto {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="flex justify-center items-center bg-gradient-to-b from-[#310047] to-[#660094] vh-10 rounded-b-2xl"
+    >
+      <nav class="flex flex-column items-center my-4 justify-center">
+        <img src="public/logo-head.svg" class="w-20" alt="" />
+        <h1 class="roboto text-white text-3xl font-bold ms-4">DoxSummarizer</h1>
+      </nav>
+    </header>
+    <main class="flex justify-center">
+      <article class="flex justify-center flex-col md:w-[60%] sm:w-[75%] min-[375px]:w-[75%]">
+        <section
+          class="flex h-[40vh] text-[#1E002C] flex-col justify-center gap-12 items-center"
+        >
+          <h1 class="text-5xl font-semibold text-center">Summarize Your PDF File</h1>
+          <p class="text-center">
+            Save time and simplify your workflow! Upload any PDF files and let
+            our AI summarizer to summarize your document with ease and free.
+            Perfect for students, writers, or other professionals.
+          </p>
+          <form action="" class="flex flex-row w-[75%]">
+            <input type="file" id="fileInput" name="file" accept=".pdf" required hidden/>
+            <label for="fileInput" class="btn md:btn-md min-[375px]:btn-lg inline-flex justify-start items-center flex-1 gap-5 text-lg min-[375px]:text-sm min-[375px]:justify-center  hover:bg-[#310047] text-white bg-[#660094] "
+              ><img src="public/plus-circle.svg" class="w-6 ms-2 my-3 md:ms-1" alt="">
+              Upload your file here
+            </label>
+            <button type="submit" class="btn text-white bg-[#660094] hover:bg-[#310047]">
+              <i class="fa-solid fa-paper-plane fa-bounce"></i>  
+            </button>
+          </form>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload File ke Gemini</title>
+</head>
+<body>
+  <h1>Upload File ke Gemini</h1>
+  <form id="uploadForm">
+    <input type="file" id="fileInput" name="file" accept=".pdf" required />
+    <button type="submit">Kirim</button>
+  </form>
+  <h2>Ringkasan:</h2>
+  <pre id="summary"></pre>
+
+  <script>
+    document.getElementById("uploadForm").addEventListener("submit", async (event) => {
+      event.preventDefault();
+      
+      const fileInput = document.getElementById("fileInput").files[0];
+      if (!fileInput) return alert("Pilih file untuk diupload.");
+
+      // Konversi file ke Base64
+      const reader = new FileReader();
+      reader.onload = async () => {
+        const fileBase64 = reader.result.split(",")[1]; // Ambil data base64 saja
+        const response = await fetch("/upload", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            fileData: fileBase64,
+            fileName: fileInput.name,
+          }),
+        });
+
+        const result = await response.json();
+        document.getElementById("summary").textContent = result.summary || "Ringkasan tidak tersedia.";
+      };
+
+      reader.readAsDataURL(fileInput);
+    });
+  </script>
+</body>
+</html> -->

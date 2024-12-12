@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document Summarizer</title>
+  <link rel="icon" href="./src/img/logo-head.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./src/css/output.css">
   <script src="https://kit.fontawesome.com/7143a6026e.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet" />
@@ -27,14 +28,14 @@
   <main class="flex justify-center my-5 py-4 flex-1">
     <article class="flex justify-center gap-5 mt-3 flex-col md:w-[60%] sm:w-[75%] min-[375px]:w-[75%]">
       <section class="flex min-h-min text-[#1E002C] gap-7 flex-col justify-center gap-12 items-center">
-        <h1 class="text-5xl font-semibold text-center">Summarize Your PDF File</h1>
+        <h1 class="text-5xl font-semibold text-center">Summarize Your Document File</h1>
         <p class="text-center">
-          Save time and simplify your workflow! Upload any PDF files and let
+          Save time and simplify your workflow! Upload any document files and let
           our AI summarizer to summarize your document with ease and free.
           Perfect for students, writers, or other professionals.
         </p>
         <form id="uploadForm" class="flex gap-5 flex-col w-[75%]">
-          <div id="dropzone" class="dropzone flex justify-center items-center flex-1 gap-5 p-6 border-dashed border-2 border-gray-300">
+          <div id="dropzone" class="dropzone flex rounded-lg justify-center items-center flex-1 gap-5 p-6 border-dashed border-2 border-gray-300">
             <div class="dz-message" data-dz-message>
               <span class="roboto">Drop file or click for upload</span>
             </div>
@@ -62,8 +63,8 @@
           </button>
         </form>
       </section>
-      <section class="border-2 border-[#310047] rounded-2xl">
-        <header class="flex px-5 items-center rounded-t-2xl py-4 gap-3 items-center justify-between bg-[#660094] text-white">
+      <section class="border-2 border-[#310047] rounded-lg">
+        <header class="flex px-5 items-center rounded-t-md py-4 gap-3 items-center justify-between bg-[#660094] text-white">
           <div class="inline-flex items-center gap-[8px]">
             <img src="src/img/ellipse.svg" class="h-[14.54px]" alt="">
             <img src="src/img/ellipse.svg" class="h-[14.54px]" alt="">
@@ -78,7 +79,7 @@
       </section>
     </article>
   </main>
-  <footer class="flex h-min-h justify-between px-5 flex-row py-4 items-center w-[100%] bg-gradient-to-t from-[#310047] to-[#660094] rounded-t-2xl">
+  <footer class="flex h-min-h justify-between px-5 flex-row py-4 items-center w-[100%] bg-gradient-to-t from-[#310047] to-[#660094]">
     <nav class="flex flex-column items-center justify-center">
       <img src="./src/img/logo-head.svg" class="w-12" alt="" />
       <h1 class="roboto text-white text-2xl font-bold ms-4">DoxSummarizer</h1>

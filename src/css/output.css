@@ -1443,6 +1443,11 @@ html {
   margin-bottom: 0.5rem;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -1536,16 +1541,36 @@ html {
   width: 100%;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
+.max-w-\[100\%\] {
+  max-width: 100%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
 }
 
 .basis-1\/2 {
   flex-basis: 50%;
 }
 
+.basis-full {
+  flex-basis: 100%;
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1602,6 +1627,10 @@ html {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .rounded-2xl {
@@ -1860,5 +1889,43 @@ html {
 
   .md\:w-\[60\%\] {
     width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .lg\:basis-1\/3 {
+    flex-basis: 33.333333%;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
+
+  .lg\:gap-2 {
+    gap: 0.5rem;
   }
 }

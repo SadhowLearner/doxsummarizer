@@ -1459,6 +1459,10 @@ html {
   margin-top: 0.75rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1622,6 +1626,10 @@ html {
   border-width: 1px;
 }
 
+.border-dashed {
+  border-style: dashed;
+}
+
 .border-\[\#310047\] {
   --tw-border-opacity: 1;
   border-color: rgb(49 0 71 / var(--tw-border-opacity, 1));
@@ -1638,6 +1646,11 @@ html {
 
 .border-\[\#\] {
   border-color: #;
+}
+
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#660094\] {
@@ -1669,6 +1682,10 @@ html {
 
 .to-\[\#660094\] {
   --tw-gradient-to: #660094 var(--tw-gradient-to-position);
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-5 {
